@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: C:\Users\camil\OneDrive\Escritorio\portafolio\Portafolio-ch
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./archivos_aplicacion:/usr/share/nginx/html
+    environment:
+      - NODE_ENV=development
+
